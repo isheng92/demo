@@ -1,0 +1,394 @@
+[INFO][2017-04-16 20:25:00,443][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 20:25:24,638][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 20:27:51,486][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c789c2: startup date [Sun Apr 16 20:27:51 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 20:27:51,555][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 20:27:51,975][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-16 20:27:52,105][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 20:27:52,171][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[WARN][2017-04-16 20:27:52,608][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.isheng.he.dao]' package. Please check your configuration.
+[WARN][2017-04-16 20:27:52,712][org.springframework.context.support.ClassPathXmlApplicationContext]Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dubbo-provider-app': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.he.StartDubboService.main(StartDubboService.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:984)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 10 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:984)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 31 more
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2531)
+	at java.lang.Class.getDeclaredMethods(Class.java:1855)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:572)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:489)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:475)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	... 43 more
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.reflect.ReflectionWorld$ReflectionWorldException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 61 more
+[INFO][2017-04-16 20:29:10,869][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c789c2: startup date [Sun Apr 16 20:29:10 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 20:29:10,938][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 20:29:11,104][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-16 20:29:11,245][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 20:29:11,316][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[INFO][2017-04-16 20:29:11,958][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:12,196][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:12,196][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:12,196][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&pid=5528&registry=zookeeper&timestamp=1492345751970, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:12,468][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:54,122][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Register: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:54,605][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Subscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:54,987][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Notify urls for subscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, urls: [empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,041][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,042][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=5528&timestamp=1492345751970], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,042][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy registry:zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=5528&timestamp=1492345751970, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,042][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Unregister: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,120][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy unregister url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,121][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Unsubscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,121][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy unsubscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,237][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Close dubbo server: /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,237][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,241][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Unexport service: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:29:55,241][com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] [DUBBO] Unexport service: injvm://127.0.0.1/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:32,933][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59578c79: startup date [Sun Apr 16 20:30:32 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 20:30:33,002][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 20:30:33,188][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-16 20:30:33,344][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 20:30:33,405][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[INFO][2017-04-16 20:30:33,970][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:34,182][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:34,182][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:34,182][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&pid=1660&registry=zookeeper&timestamp=1492345833982, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:34,436][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:34,463][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, data: {com.isheng.he.demo.DemoService=empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5528&side=provider&timestamp=1492345752011}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:43,608][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Register: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,038][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Subscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,363][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Notify urls for subscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, urls: [empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,413][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,413][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=1660&timestamp=1492345833982], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,414][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy registry:zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=1660&timestamp=1492345833982, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,414][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Unregister: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,511][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy unregister url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,511][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Unsubscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,512][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy unsubscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,620][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Close dubbo server: /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,621][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,624][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Unexport service: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:30:44,625][com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] [DUBBO] Unexport service: injvm://127.0.0.1/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:40:31,114][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 20:40:31,208][com.alibaba.dubbo.container.Main] [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:40:31,372][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1513e285: startup date [Sun Apr 16 20:40:31 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 20:40:31,462][com.alibaba.dubbo.container.Main] [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:42:07,441][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 20:42:07,537][com.alibaba.dubbo.container.Main] [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:42:07,715][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4c7c9492: startup date [Sun Apr 16 20:42:07 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 20:42:07,806][com.alibaba.dubbo.container.Main] [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:24:24,858][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 21:24:24,958][com.alibaba.dubbo.container.Main] [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:24:25,123][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2305d3ff: startup date [Sun Apr 16 21:24:25 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:24:25,209][com.alibaba.dubbo.container.Main] [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:24:40,083][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 21:24:40,188][com.alibaba.dubbo.container.Main] [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:24:40,380][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2305d3ff: startup date [Sun Apr 16 21:24:40 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:24:40,476][com.alibaba.dubbo.container.Main] [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:25:15,913][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 21:25:16,034][com.alibaba.dubbo.container.Main] [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:25:16,197][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7463020e: startup date [Sun Apr 16 21:25:16 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:25:16,294][com.alibaba.dubbo.container.Main] [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:38:52,585][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7baf641e: startup date [Sun Apr 16 21:38:52 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:38:52,670][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 21:38:52,845][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-16 21:38:52,990][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 21:38:53,078][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[WARN][2017-04-16 21:38:53,500][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.isheng.he.dao]' package. Please check your configuration.
+[WARN][2017-04-16 21:38:53,573][org.springframework.context.support.ClassPathXmlApplicationContext]Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dubbo-provider-app': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.isheng.he.StartDubboService.main(StartDubboService.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:984)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 10 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:984)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 31 more
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2531)
+	at java.lang.Class.getDeclaredMethods(Class.java:1855)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:572)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:489)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:475)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	... 43 more
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.reflect.ReflectionWorld$ReflectionWorldException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 61 more
+[INFO][2017-04-16 21:40:53,113][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@460ee450: startup date [Sun Apr 16 21:40:53 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:40:53,180][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 21:40:53,341][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-16 21:40:53,458][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 21:40:53,527][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[INFO][2017-04-16 21:40:54,166][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:40:54,383][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:40:54,383][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5716&side=provider&timestamp=1492350054197, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:40:54,383][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5716&side=provider&timestamp=1492350054197 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&pid=5716&registry=zookeeper&timestamp=1492350054178, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:40:54,646][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:40:54,675][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, data: {com.isheng.he.demo.DemoService=empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=1660&side=provider&timestamp=1492345834001}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:41:06,418][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Register: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5716&side=provider&timestamp=1492350054197, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:41:06,835][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Subscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5716&side=provider&timestamp=1492350054197, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:41:07,168][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Notify urls for subscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5716&side=provider&timestamp=1492350054197, urls: [empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5716&side=provider&timestamp=1492350054197], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:10,526][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7baf641e: startup date [Sun Apr 16 21:42:10 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:42:10,595][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 21:42:10,782][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-16 21:42:10,915][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 21:42:10,973][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[INFO][2017-04-16 21:42:11,512][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:11,750][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:11,751][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:11,751][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&pid=2536&registry=zookeeper&timestamp=1492350131525, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:12,006][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:12,034][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, data: {com.isheng.he.demo.DemoService=empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5716&side=provider&timestamp=1492350054197}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:12,256][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Register: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:12,703][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Subscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,035][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Notify urls for subscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, urls: [empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,089][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,090][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=2536&timestamp=1492350131525], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,090][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy registry:zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=2536&timestamp=1492350131525, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,090][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Unregister: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,185][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy unregister url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,186][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Unsubscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,187][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Destroy unsubscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,304][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Close dubbo server: /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,305][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,314][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Unexport service: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:13,316][com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] [DUBBO] Unexport service: injvm://127.0.0.1/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:36,126][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@460ee450: startup date [Sun Apr 16 21:42:36 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:42:36,201][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 21:42:36,373][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-16 21:42:36,497][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-16 21:42:36,576][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[INFO][2017-04-16 21:42:37,147][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:37,356][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:37,356][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5928&side=provider&timestamp=1492350157177, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:37,356][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5928&side=provider&timestamp=1492350157177 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider-app&dubbo=2.5.3&pid=5928&registry=zookeeper&timestamp=1492350157159, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:37,602][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:37,634][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-127.0.0.1.cache, data: {com.isheng.he.demo.DemoService=empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2536&side=provider&timestamp=1492350131548}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:37,819][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Register: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5928&side=provider&timestamp=1492350157177, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:38,263][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Subscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5928&side=provider&timestamp=1492350157177, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:42:38,571][com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] [DUBBO] Notify urls for subscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5928&side=provider&timestamp=1492350157177, urls: [empty://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=dubbo-provider-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5928&side=provider&timestamp=1492350157177], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-18 11:10:49,896][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7baf641e: startup date [Tue Apr 18 11:10:49 CST 2017]; root of context hierarchy
+[INFO][2017-04-18 11:10:49,985][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-config.xml]
+[INFO][2017-04-18 11:10:50,168][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-dubbo-provider.xml]
+[INFO][2017-04-18 11:10:50,293][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-18 11:10:50,406][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-mybatis.xml]
+[WARN][2017-04-18 11:10:51,013][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.isheng.he.dao]' package. Please check your configuration.
+[WARN][2017-04-18 11:10:51,102][org.springframework.context.support.ClassPathXmlApplicationContext]Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dubbo-provider-app': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.isheng.he.StartDubboService.main(StartDubboService.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:984)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 10 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:984)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 31 more
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2531)
+	at java.lang.Class.getDeclaredMethods(Class.java:1855)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:572)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:489)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:475)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	... 43 more
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.reflect.ReflectionWorld$ReflectionWorldException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 61 more
