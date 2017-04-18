@@ -1,0 +1,316 @@
+[INFO][2017-04-15 01:34:03,910][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d69084f: startup date [Sat Apr 15 01:34:03 CST 2017]; root of context hierarchy
+[INFO][2017-04-15 01:34:03,989][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-bean.xml]
+[INFO][2017-04-15 01:34:04,324][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-15 01:34:05,138][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,383][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,384][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,384][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 to registry registry://224.5.6.7:1234/com.alibaba.dubbo.registry.RegistryService?application=hello-world-app&dubbo=2.5.3&pid=2664&registry=multicast&timestamp=1492191245150, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,815][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,839][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Register: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,840][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: register dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,840][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: register dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,841][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Subscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,842][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: subscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:05,842][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: subscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[WARN][2017-04-15 01:34:06,842][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Ignore empty notify urls for subscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,875][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,876][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [multicast://224.5.6.7:1234/com.alibaba.dubbo.registry.RegistryService?application=hello-world-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=2664&timestamp=1492191245150], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,876][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Destroy registry:multicast://224.5.6.7:1234/com.alibaba.dubbo.registry.RegistryService?application=hello-world-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=2664&timestamp=1492191245150, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,876][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Unregister: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,877][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: unregister dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,878][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Destroy unregister url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,878][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: unregister dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,878][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Unsubscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,879][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Unregister: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,879][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: unregister provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,880][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: unregister provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,880][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: unsubscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,880][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Destroy unsubscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,880][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: unsubscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,881][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Close dubbo server: /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,882][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,884][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Unexport service: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:34:06,885][com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] [DUBBO] Unexport service: injvm://127.0.0.1/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2664&side=provider&timestamp=1492191245198, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:41,432][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@781d57c7: startup date [Sat Apr 15 01:39:41 CST 2017]; root of context hierarchy
+[INFO][2017-04-15 01:39:41,536][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-bean.xml]
+[INFO][2017-04-15 01:39:41,805][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-15 01:39:42,633][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:42,860][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:42,860][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:42,860][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 to registry registry://224.5.6.7:1234/com.alibaba.dubbo.registry.RegistryService?application=hello-world-app&dubbo=2.5.3&pid=2312&registry=multicast&timestamp=1492191582646, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:43,124][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:43,155][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Register: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:43,155][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: register dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:43,155][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: register dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:43,155][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Subscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:43,155][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: subscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:43,155][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: subscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[WARN][2017-04-15 01:39:44,169][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Ignore empty notify urls for subscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [multicast://224.5.6.7:1234/com.alibaba.dubbo.registry.RegistryService?application=hello-world-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=2312&timestamp=1492191582646], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Destroy registry:multicast://224.5.6.7:1234/com.alibaba.dubbo.registry.RegistryService?application=hello-world-app&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=2312&timestamp=1492191582646, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Unregister: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: unregister dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Destroy unregister url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: unregister dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Unsubscribe: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Unregister: provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: unregister provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Send broadcast message: unsubscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 to /224.5.6.7:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,200][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: unregister provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,216][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Destroy unsubscribe url provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,216][com.alibaba.dubbo.registry.multicast.MulticastRegistry] [DUBBO] Receive multicast message: unsubscribe provider://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670 from /169.254.23.8:1234, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,216][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Close dubbo server: /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,216][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,216][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Unexport service: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 01:39:44,216][com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] [DUBBO] Unexport service: injvm://127.0.0.1/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=2312&side=provider&timestamp=1492191582670, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:53,963][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@781d57c7: startup date [Sat Apr 15 11:13:53 CST 2017]; root of context hierarchy
+[INFO][2017-04-15 11:13:54,051][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\he\target\classes\spring\spring-bean.xml]
+[INFO][2017-04-15 11:13:55,001][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO][2017-04-15 11:13:56,015][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] The service ready on spring started. service: com.isheng.he.demo.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,324][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,324][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service com.isheng.he.demo.DemoService to url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5704&side=provider&timestamp=1492226036119, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,325][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service com.isheng.he.demo.DemoService url dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5704&side=provider&timestamp=1492226036119 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=hello-world-app&dubbo=2.5.3&pid=5704&registry=multicast&timestamp=1492226036028, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,709][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,724][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,724][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,725][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Close dubbo server: /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,725][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /169.254.23.8:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,728][com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] [DUBBO] Unexport service: dubbo://169.254.23.8:20880/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5704&side=provider&timestamp=1492226036119, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:13:56,728][com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] [DUBBO] Unexport service: injvm://127.0.0.1/com.isheng.he.demo.DemoService?anyhost=true&application=hello-world-app&dubbo=2.5.3&interface=com.isheng.he.demo.DemoService&methods=sayHello&pid=5704&side=provider&timestamp=1492226036119, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:37:51,679][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@781d57c7: startup date [Sat Apr 15 11:37:51 CST 2017]; root of context hierarchy
+[INFO][2017-04-15 11:38:38,742][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@781d57c7: startup date [Sat Apr 15 11:38:38 CST 2017]; root of context hierarchy
+[INFO][2017-04-15 11:38:38,821][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\dubbo-consumer.xml]
+[INFO][2017-04-15 11:38:39,107][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN][2017-04-15 11:38:39,708][org.springframework.beans.factory.support.DefaultListableBeanFactory]FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet
+java.lang.IllegalStateException: com.alibaba.dubbo.demo.DemoService
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:450)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType(ReferenceBean.java:69)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBean(FactoryBeanRegistrySupport.java:66)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:404)
+	at org.springframework.context.support.DefaultLifecycleProcessor.getLifecycleBeans(DefaultLifecycleProcessor.java:273)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:131)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:770)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.ai.demo.DemoClient.main(DemoClient.java:13)
+Caused by: java.lang.ClassNotFoundException: com.alibaba.dubbo.demo.DemoService
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:446)
+	... 13 more
+[INFO][2017-04-15 11:38:39,732][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:38:39,746][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:45:51,636][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@781d57c7: startup date [Sat Apr 15 11:45:51 CST 2017]; root of context hierarchy
+[INFO][2017-04-15 11:45:51,726][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\dubbo-consumer.xml]
+[INFO][2017-04-15 11:45:52,013][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN][2017-04-15 11:45:52,636][org.springframework.beans.factory.support.DefaultListableBeanFactory]FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet
+java.lang.IllegalStateException: com.alibaba.dubbo.demo.DemoService
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:450)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType(ReferenceBean.java:69)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBean(FactoryBeanRegistrySupport.java:66)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:404)
+	at org.springframework.context.support.DefaultLifecycleProcessor.getLifecycleBeans(DefaultLifecycleProcessor.java:273)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:131)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:770)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.ai.demo.DemoClient.main(DemoClient.java:13)
+Caused by: java.lang.ClassNotFoundException: com.alibaba.dubbo.demo.DemoService
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:446)
+	... 13 more
+[INFO][2017-04-15 11:45:52,663][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:45:52,666][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:46:23,083][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@781d57c7: startup date [Sat Apr 15 11:46:23 CST 2017]; root of context hierarchy
+[INFO][2017-04-15 11:46:23,177][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\dubbo-consumer.xml]
+[INFO][2017-04-15 11:46:23,458][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN][2017-04-15 11:46:24,097][org.springframework.beans.factory.support.DefaultListableBeanFactory]FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet
+java.lang.IllegalStateException: com.alibaba.dubbo.demo.DemoService
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:450)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType(ReferenceBean.java:69)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBean(FactoryBeanRegistrySupport.java:66)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:404)
+	at org.springframework.context.support.DefaultLifecycleProcessor.getLifecycleBeans(DefaultLifecycleProcessor.java:273)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:131)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:770)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.ai.demo.DemoClient.main(DemoClient.java:13)
+Caused by: java.lang.ClassNotFoundException: com.alibaba.dubbo.demo.DemoService
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:446)
+	... 13 more
+[INFO][2017-04-15 11:46:24,130][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-15 11:46:24,130][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:31:14,460][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19a96bae: startup date [Sun Apr 16 20:31:14 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 20:31:14,570][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 20:31:14,786][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-dubbo-consumer.xml]
+[INFO][2017-04-16 20:31:14,914][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN][2017-04-16 20:31:15,590][org.springframework.beans.factory.support.DefaultListableBeanFactory]FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet
+java.lang.IllegalStateException: com.alibaba.dubbo.demo.DemoService
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:450)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType(ReferenceBean.java:69)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBean(FactoryBeanRegistrySupport.java:66)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:404)
+	at org.springframework.context.support.DefaultLifecycleProcessor.getLifecycleBeans(DefaultLifecycleProcessor.java:273)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:131)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:770)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.ai.demo.DemoClient.main(DemoClient.java:13)
+Caused by: java.lang.ClassNotFoundException: com.alibaba.dubbo.demo.DemoService
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:446)
+	... 13 more
+[INFO][2017-04-16 20:31:15,614][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:31:15,616][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:32:00,772][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19a96bae: startup date [Sun Apr 16 20:32:00 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 20:32:00,856][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 20:32:01,049][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-dubbo-consumer.xml]
+[INFO][2017-04-16 20:32:01,188][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN][2017-04-16 20:32:01,775][org.springframework.beans.factory.support.DefaultListableBeanFactory]FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet
+java.lang.IllegalStateException: com.alibaba.dubbo.demo.DemoService
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:450)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType(ReferenceBean.java:69)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBean(FactoryBeanRegistrySupport.java:66)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:404)
+	at org.springframework.context.support.DefaultLifecycleProcessor.getLifecycleBeans(DefaultLifecycleProcessor.java:273)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:131)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:770)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.ai.demo.DemoClient.main(DemoClient.java:13)
+Caused by: java.lang.ClassNotFoundException: com.alibaba.dubbo.demo.DemoService
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:446)
+	... 13 more
+[INFO][2017-04-16 20:32:01,797][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 20:32:01,800][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:43:51,872][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19a96bae: startup date [Sun Apr 16 21:43:51 CST 2017]; root of context hierarchy
+[INFO][2017-04-16 21:43:51,956][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-config.xml]
+[INFO][2017-04-16 21:43:52,151][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-dubbo-consumer.xml]
+[INFO][2017-04-16 21:43:52,279][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN][2017-04-16 21:43:52,857][org.springframework.beans.factory.support.DefaultListableBeanFactory]FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet
+java.lang.IllegalStateException: com.alibaba.dubbo.demo.DemoService
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:450)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType(ReferenceBean.java:69)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBean(FactoryBeanRegistrySupport.java:66)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:404)
+	at org.springframework.context.support.DefaultLifecycleProcessor.getLifecycleBeans(DefaultLifecycleProcessor.java:273)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:131)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:770)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.ai.demo.DemoClient.main(DemoClient.java:13)
+Caused by: java.lang.ClassNotFoundException: com.alibaba.dubbo.demo.DemoService
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:446)
+	... 13 more
+[INFO][2017-04-16 21:43:52,880][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-16 21:43:52,884][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-18 11:10:26,791][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4e6e076c: startup date [Tue Apr 18 11:10:26 CST 2017]; root of context hierarchy
+[INFO][2017-04-18 11:10:27,132][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-config.xml]
+[INFO][2017-04-18 11:10:28,252][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [D:\dev\Workspace\myeclipse2015-space\ai\target\classes\spring\spring-dubbo-consumer.xml]
+[INFO][2017-04-18 11:10:28,423][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[WARN][2017-04-18 11:10:29,512][org.springframework.beans.factory.support.DefaultListableBeanFactory]FactoryBean threw exception from getObjectType, despite the contract saying that it should return null if the type of its object cannot be determined yet
+java.lang.IllegalStateException: com.alibaba.dubbo.demo.DemoService
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:450)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType(ReferenceBean.java:69)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getTypeForFactoryBean(FactoryBeanRegistrySupport.java:66)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:491)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:404)
+	at org.springframework.context.support.DefaultLifecycleProcessor.getLifecycleBeans(DefaultLifecycleProcessor.java:273)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:131)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:770)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.isheng.ai.demo.DemoClient.main(DemoClient.java:13)
+Caused by: java.lang.ClassNotFoundException: com.alibaba.dubbo.demo.DemoService
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at com.alibaba.dubbo.config.ReferenceConfig.getInterfaceClass(ReferenceConfig.java:446)
+	... 13 more
+[INFO][2017-04-18 11:10:29,557][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO][2017-04-18 11:10:29,560][com.alibaba.dubbo.registry.support.AbstractRegistryFactory] [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
