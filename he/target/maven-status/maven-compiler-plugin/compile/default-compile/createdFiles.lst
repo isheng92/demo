@@ -1,6 +1,7 @@
 com\isheng\he\base\BaseEntity.class
 com\isheng\he\demo\impl\DemoServiceImpl.class
 com\isheng\he\StartHetty.class
+com\isheng\he\StartDubboService.class
 com\isheng\he\demo\DemoService.class
 com\isheng\he\common\JedisClient.class
 com\isheng\he\common\ObjectUtil.class
